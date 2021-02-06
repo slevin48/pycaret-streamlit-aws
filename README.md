@@ -11,15 +11,17 @@ Read the complete post: https://medium.com/@moez_62905/deploy-pycaret-and-stream
 
 - PyCaret repository : https://www.github.com/pycaret/pycaret
 
+![Streamlit Web App](https://miro.medium.com/max/1050/1*TesAmfCyanOeMEPiYxInUg.png)
 
-## Run docker locally
+
+## 🐋 Run Docker locally
 
 ```
 docker build -t pycaret-streamlit-aws .
 docker run -d -p 8501:8501 pycaret-streamlit-aws
 ```
 
-## Deploy Streamlit Docker on Heroku
+## 🚀 Deploy Streamlit Docker on Heroku
 
 In order to deploy this on heroku, there's a need to assign the port where streamlit will run with the `$PORT` environmental variable
 https://help.heroku.com/PPBPA231/how-do-i-use-the-port-environment-variable-in-container-based-apps
@@ -34,3 +36,8 @@ https://docs.streamlit.io/en/stable/streamlit_configuration.html#set-configurati
 
 Concretely, modify line 21 of the [Dockerfile](Dockerfile):
 `CMD streamlit run app.py --server.port $PORT`
+
+![https://www.freepik.com/free-photos-vectors/cargo-ship](https://miro.medium.com/max/939/1*SlzsvRhA71oFOhAjE1Hs0A.jpeg)
+
+💻 Credits
+https://www.freepik.com/free-photos-vectors/cargo-ship

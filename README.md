@@ -10,3 +10,11 @@ Read the complete post: https://medium.com/@moez_62905/deploy-pycaret-and-stream
 - Subscribe to our YouTube : https://www.youtube.com/channel/UCxA1YTYJ9BEeo50lxyI_B3g 
 
 - PyCaret repository : https://www.github.com/pycaret/pycaret
+
+
+## Run docker locally
+
+```
+docker build -t pycaret-streamlit-aws .
+docker run -d -p 8501:8501 pycaret-streamlit-aws
+```
